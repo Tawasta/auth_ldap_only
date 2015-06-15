@@ -1,13 +1,18 @@
+# -*- coding: utf-8 -*-
 import openerp.exceptions
-from openerp.osv import osv
+from openerp.osv import osv, fields
 from openerp import SUPERUSER_ID
 
 class users(osv.osv):
     _inherit = "res.users"
+    
+    _columns = {
+        'ldap_bypass': fields.boolean('Bypass LDAP')
+    }
 
     def check_credentials(self, cr, uid, password):
         try:
-            if uid == SUPERUSER_ID:
+            if uid == SUPERUSER_ID or self.browse(cr, uid, uid).ldap_bypass == True :
                 super(users, self).check_credentials(cr, uid, password)
             else:
                 raise openerp.exceptions.AccessDenied()

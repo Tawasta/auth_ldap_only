@@ -21,6 +21,9 @@
     'depends': [
         'auth_ldap',
     ],
+    'data': [
+        'view/res_users_form.xml',
+    ],
     'description': 
 '''
 Auth LDAP Only
