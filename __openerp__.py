@@ -21,7 +21,7 @@
 {
     'name': 'Authentication via LDAP Only',
     'category': 'Authentication',
-    'version': '8.0.0.1.7',
+    'version': '8.0.0.1.8',
     'author': 'Oy Tawasta Technologies Ltd',
     'website': 'http://www.tawasta.fi',
     'depends': [

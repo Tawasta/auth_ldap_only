@@ -1,9 +1,11 @@
 Auth LDAP Only
 --------------
 
-Auth LDAP Only is an extension to [auth\_ldap](https://github.com/OCA/OCB/tree/8.0/addons/auth_ldap)
-
 Disables logins against local passwords in Odoo res_users database.
+
+Auth LDAP Only is an extension to auth_ldap_
+
+.. _auth_ldap: https://apps.openerp.com/apps/8.0/auth_ldap/
 
 Features
 --------
