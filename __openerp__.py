@@ -15,16 +15,18 @@
 {
     'name': 'Authentication via LDAP Only',
     'category': 'Authentication',
-    'version': '1.0',
+    'version': '8.0.0.1.0',
     'author': 'Oy Tawasta Technologies Ltd',
     'website': 'http://www.tawasta.fi',
     'depends': [
+        'base',
+        'web',
         'auth_ldap',
     ],
     'data': [
         'view/res_users_form.xml',
     ],
-    'description': 
+    'description':
 '''
 Auth LDAP Only
 --------------

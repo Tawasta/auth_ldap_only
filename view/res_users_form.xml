@@ -8,9 +8,9 @@
 			
 			<field name="arch" type="xml">
 			
-				<field name="in_group_1" position="after">
+				<notebook position="after">
 					<field name="ldap_bypass" />
-				</field>
+				</notebook>
 
 			</field>
 		</record>
