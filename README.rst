@@ -10,3 +10,4 @@ Features
 
 * Only allows LDAP-authorization (disables local logins)
 * Admin is excluded from LDAP-authorization, and can login via local password
+* Users can be excluded from LDAP-authorization from user form
