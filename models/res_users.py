@@ -19,8 +19,9 @@ class users(osv.osv):
                 raise openerp.exceptions.AccessDenied()
         except openerp.exceptions.AccessDenied:
 
-            cr.execute('SELECT login FROM res_users WHERE id=%s AND active=TRUE'
-                       , (int(uid),))
+            cr.execute(
+                'SELECT login FROM res_users WHERE id=%s AND active=TRUE',
+                (int(uid),))
             res = cr.fetchone()
             if res:
                 ldap_obj = self.pool['res.company.ldap']
